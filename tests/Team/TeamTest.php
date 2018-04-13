@@ -20,6 +20,9 @@ class TeamTest extends TestCase
         $this->team = Team::create('York City');
     }
 
+    /**
+     * @covers BallGame\Domain\Team\Team
+     */
     public function testGetName()
     {
         $this->assertEquals('York City', $this->team->getName());
